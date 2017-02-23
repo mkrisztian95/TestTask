@@ -9,3 +9,12 @@ target 'OnlineCatalogue' do
   pod 'Kingfisher', '~> 3.0'
   pod 'ReachabilitySwift', '~> 3'
 end
+
+target 'OnlineCatalogueUITests' do
+  use_frameworks!
+  pod 'PromiseKit/Alamofire'
+  pod 'PromiseKit', '~> 4.0'
+  pod 'SwiftyJSON'
+  pod 'Kingfisher', '~> 3.0'
+  pod 'ReachabilitySwift', '~> 3'
+end

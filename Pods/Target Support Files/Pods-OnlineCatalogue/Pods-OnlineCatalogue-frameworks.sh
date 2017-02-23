@@ -89,18 +89,18 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/PromiseKit/PromiseKit.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ReachabilitySwift/ReachabilitySwift.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire-iOS10.0/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Kingfisher-iOS10.0/Kingfisher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PromiseKit-iOS10.0/PromiseKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReachabilitySwift-iOS10.0/ReachabilitySwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON-iOS10.0/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/Alamofire/Alamofire.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/Kingfisher/Kingfisher.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/PromiseKit/PromiseKit.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/ReachabilitySwift/ReachabilitySwift.framework"
-  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON/SwiftyJSON.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Alamofire-iOS10.0/Alamofire.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Kingfisher-iOS10.0/Kingfisher.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/PromiseKit-iOS10.0/PromiseKit.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ReachabilitySwift-iOS10.0/ReachabilitySwift.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/SwiftyJSON-iOS10.0/SwiftyJSON.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

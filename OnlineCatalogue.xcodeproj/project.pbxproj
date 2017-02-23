@@ -26,6 +26,7 @@
 		0D7D5A621E5DC52100F1EB7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D5A611E5DC52100F1EB7E /* Assets.xcassets */; };
 		0D7D5A651E5DC52100F1EB7E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D7D5A631E5DC52100F1EB7E /* LaunchScreen.storyboard */; };
 		7BA2932A1C1BECF100C19FE2 /* Pods_OnlineCatalogue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58E2C3C040C58DAD5FAE67E7 /* Pods_OnlineCatalogue.framework */; };
+		DB21B8DB6ABFAD9BA17B3739 /* Pods_OnlineCatalogueUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2CE4D1ABF6FA9F1CDBBC8A /* Pods_OnlineCatalogueUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +66,10 @@
 		0D7D5A661E5DC52100F1EB7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D3E076FD5ED2C3E42F52501 /* Pods-OnlineCatalogue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineCatalogue.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnlineCatalogue/Pods-OnlineCatalogue.release.xcconfig"; sourceTree = "<group>"; };
 		58E2C3C040C58DAD5FAE67E7 /* Pods_OnlineCatalogue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineCatalogue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FC1758F3BFFC25C3B9E1F1C /* Pods-OnlineCatalogueUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineCatalogueUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnlineCatalogueUITests/Pods-OnlineCatalogueUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0D023133D31ECA02676D959 /* Pods-OnlineCatalogue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineCatalogue.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OnlineCatalogue/Pods-OnlineCatalogue.debug.xcconfig"; sourceTree = "<group>"; };
+		EB2CE4D1ABF6FA9F1CDBBC8A /* Pods_OnlineCatalogueUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OnlineCatalogueUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE20E53047EEB42475C0C8F1 /* Pods-OnlineCatalogueUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OnlineCatalogueUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OnlineCatalogueUITests/Pods-OnlineCatalogueUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB21B8DB6ABFAD9BA17B3739 /* Pods_OnlineCatalogueUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				58E2C3C040C58DAD5FAE67E7 /* Pods_OnlineCatalogue.framework */,
+				EB2CE4D1ABF6FA9F1CDBBC8A /* Pods_OnlineCatalogueUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,6 +210,8 @@
 			children = (
 				D0D023133D31ECA02676D959 /* Pods-OnlineCatalogue.debug.xcconfig */,
 				2D3E076FD5ED2C3E42F52501 /* Pods-OnlineCatalogue.release.xcconfig */,
+				8FC1758F3BFFC25C3B9E1F1C /* Pods-OnlineCatalogueUITests.debug.xcconfig */,
+				FE20E53047EEB42475C0C8F1 /* Pods-OnlineCatalogueUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -215,9 +223,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0D41CA011E5F465E00B35BF0 /* Build configuration list for PBXNativeTarget "OnlineCatalogueUITests" */;
 			buildPhases = (
+				B5B450C3637355DE5151BFDC /* [CP] Check Pods Manifest.lock */,
 				0D41C9F61E5F465E00B35BF0 /* Sources */,
 				0D41C9F71E5F465E00B35BF0 /* Frameworks */,
 				0D41C9F81E5F465E00B35BF0 /* Resources */,
+				55A866F0FDA71E7BD08FC13F /* [CP] Embed Pods Frameworks */,
+				345E8AFC2EB58138679EC28B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -267,6 +278,7 @@
 					};
 					0D7D5A561E5DC52100F1EB7E = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EWU83H92V3;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -328,6 +340,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		345E8AFC2EB58138679EC28B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlineCatalogueUITests/Pods-OnlineCatalogueUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		352A826D631D095485A09AB3 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -343,6 +370,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlineCatalogue/Pods-OnlineCatalogue-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		55A866F0FDA71E7BD08FC13F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlineCatalogueUITests/Pods-OnlineCatalogueUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B577A6ED40281B9C2F9BFC51 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -356,6 +398,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OnlineCatalogue/Pods-OnlineCatalogue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5B450C3637355DE5151BFDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -421,6 +478,7 @@
 /* Begin XCBuildConfiguration section */
 		0D41CA021E5F465E00B35BF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FC1758F3BFFC25C3B9E1F1C /* Pods-OnlineCatalogueUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = EWU83H92V3;
 				INFOPLIST_FILE = OnlineCatalogueUITests/Info.plist;
@@ -434,6 +492,7 @@
 		};
 		0D41CA031E5F465E00B35BF0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE20E53047EEB42475C0C8F1 /* Pods-OnlineCatalogueUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = EWU83H92V3;
 				INFOPLIST_FILE = OnlineCatalogueUITests/Info.plist;
@@ -542,7 +601,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EWU83H92V3;
 				INFOPLIST_FILE = OnlineCatalogue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -560,7 +619,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = EWU83H92V3;
 				INFOPLIST_FILE = OnlineCatalogue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
