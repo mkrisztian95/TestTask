@@ -278,7 +278,6 @@
 					};
 					0D7D5A561E5DC52100F1EB7E = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = EWU83H92V3;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -601,7 +600,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = EWU83H92V3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OnlineCatalogue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -619,7 +618,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = EWU83H92V3;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = OnlineCatalogue/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
